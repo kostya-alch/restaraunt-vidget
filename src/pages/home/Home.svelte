@@ -1,5 +1,7 @@
-<script></script>
+<div>
+  <Search />
+</div>
 
-<main>
-  ada
-</main>
+<script>
+  import Search from './search/Search.svelte';
+</script>

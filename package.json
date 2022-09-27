@@ -24,6 +24,7 @@
   },
   "dependencies": {
     "prettier": "^2.7.1",
+    "prettier-plugin-svelte": "^2.7.1",
     "svelte-spa-router": "^3.3.0"
   }
 }

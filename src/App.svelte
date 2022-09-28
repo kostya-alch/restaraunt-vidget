@@ -1,5 +1,4 @@
-<script lang='ts'>
-
+<script lang="ts">
   import Home from './pages/home/Home.svelte';
 </script>
 
@@ -8,6 +7,4 @@
 </main>
 
 <style>
-
-
 </style>

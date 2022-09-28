@@ -4,22 +4,26 @@
   export let filter: IFilter;
 </script>
 
-<div class="filter">
-  <div class="icon" style="background-color: {filter.color}">
-    <img src={filter.icon} alt="filter" width="34" />
-  </div>
-  <div class="name">
+<button class="filter">
+  <span class="icon" style="background-color: {filter.color}">
+    <img src={filter.icon} alt="filter" width="30" />
+  </span>
+  <span class="name">
     {filter.name}
-  </div>
-</div>
+  </span>
+</button>
 
 <style lang="scss">
   .filter {
-    @apply text-center bg-white shadow rounded-2xl p-2;
+    @apply text-center bg-white rounded-3xl p-2 w-16;
+    width: 4.5rem;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.05);
     .icon {
+      @apply rounded-3xl flex items-center justify-center p-3;
     }
     .name {
-      @apply text-sm;
+      @apply mt-1 block;
+      font-size: 12px;
     }
   }
 </style>

@@ -1,13 +1,13 @@
 <script lang="ts">
   import IoIosSearch from 'svelte-icons/io/IoIosSearch.svelte';
-  let searchTerm = '';
+  import { searchTerm } from '../../../store/store';
 </script>
 
 <div class="search">
   <div class="icon">
     <IoIosSearch />
   </div>
-  <input type="search" placeholder="Search.." bind:value={searchTerm} />
+  <input type="search" placeholder="Search.." bind:value={$searchTerm} />
 </div>
 
 <style lang="scss">

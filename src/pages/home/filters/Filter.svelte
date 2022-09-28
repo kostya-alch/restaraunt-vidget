@@ -23,6 +23,8 @@
       color: '#FDF8E2',
     },
   ];
+
+  let currentFilter = '';
 </script>
 
 <div class="filter">

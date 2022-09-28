@@ -14,7 +14,7 @@
   "tabWidth": 2,
   "trailingComma": "all",
   "useTabs": false,
-  "svelteSortOrder" : "options-markup-scripts-styles",
+  "svelteSortOrder" : "options-scripts-markup-styles",
   "svelteStrictMode": false,
   "svelteBracketNewLine": true,
   "svelteAllowShorthand": true,

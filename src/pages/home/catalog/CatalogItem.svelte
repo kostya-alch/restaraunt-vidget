@@ -53,7 +53,7 @@
 
 <style lang="scss">
   .restaurant {
-    @apply mb-7 bg-white shadow rounded-3xl relative;
+    @apply mb-11 bg-white shadow rounded-3xl relative;
     > a > img {
       @apply rounded-3xl;
     }
@@ -110,7 +110,7 @@
     }
 
     &::after {
-      @apply top-3;
+      @apply bottom-3;
       background-color: #dff2e8;
       transform: rotate(-12deg);
       z-index: -2;

@@ -1,13 +1,21 @@
 <script lang="ts">
   import IoIosSearch from 'svelte-icons/io/IoIosSearch.svelte';
   import { searchTerm } from '../../../store/store';
+
+  let term = '';
+
+  const onKeyPress = (event) => {
+    if (event.charCode === 13) {
+      searchTerm.set(term);
+    }
+  };
 </script>
 
 <div class="search">
   <div class="icon">
     <IoIosSearch />
   </div>
-  <input type="search" placeholder="Search.." bind:value={$searchTerm} />
+  <input type="search" placeholder="Search.." bind:value={term} on:keypress={onKeyPress} />
 </div>
 
 <style lang="scss">

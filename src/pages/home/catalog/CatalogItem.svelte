@@ -53,7 +53,7 @@
 
 <style lang="scss">
   .restaurant {
-    @apply mb-7 bg-white shadow rounded-3xl;
+    @apply mb-7 bg-white shadow rounded-3xl relative;
     > a > img {
       @apply rounded-3xl;
     }
@@ -83,6 +83,7 @@
         .star {
           @apply text-yellow-300 w-5;
         }
+
         > span {
           @apply ml-1;
         }
@@ -91,6 +92,27 @@
       .destination {
         @apply mt-3 bg-green-500 py-1 px-3 text-white rounded-lg;
       }
+    }
+
+    &::before,
+    &::after {
+      @apply absolute rounded-3xl left-3;
+      content: '';
+      width: 90%;
+      height: 94%;
+    }
+
+    &::before {
+      @apply top-3;
+      background-color: #c4ead8;
+      transform: rotate(-10deg);
+    }
+
+    &::after {
+      @apply top-3;
+      background-color: #dff2e8;
+      transform: rotate(-12deg);
+      z-index: -1;
     }
   }
 </style>

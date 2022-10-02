@@ -9,7 +9,7 @@
       slug: 'asian-kitchen',
       rating: 13,
       priceRating: '$$$',
-      img: '',
+      img: './images/restaurant/1.webp',
       kitchens: ['Italian', 'Japanese'],
     },
     {
@@ -18,7 +18,7 @@
       slug: 'vegan-cafe',
       rating: 2.3,
       priceRating: '$$',
-      img: '',
+      img: './images/restaurant/2.webp',
       kitchens: ['Vegan'],
     },
     {
@@ -27,7 +27,7 @@
       slug: 'vegan-cafe',
       rating: 2.3,
       priceRating: '$$$$',
-      img: '',
+      img: './images/restaurant/3.webp',
       kitchens: ['Russian'],
     },
   ];
@@ -35,14 +35,14 @@
   let currentFilter = '';
 </script>
 
-<div class="filter">
-  {#each filters as filter}
-    <FilterItem {filter} />
+<div class="catalog">
+  {#each restaurants as restaurant}
+    <CatalogItem {restaurant} />
   {/each}
 </div>
 
 <style lang="scss">
-  .filter {
-    @apply mt-5 flex items-center justify-between;
+  .catalog {
+    @apply mt-8;
   }
 </style>

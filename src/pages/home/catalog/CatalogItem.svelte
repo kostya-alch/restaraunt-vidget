@@ -106,13 +106,14 @@
       @apply top-3;
       background-color: #c4ead8;
       transform: rotate(-10deg);
+      z-index: -1;
     }
 
     &::after {
       @apply top-3;
       background-color: #dff2e8;
       transform: rotate(-12deg);
-      z-index: -1;
+      z-index: -2;
     }
   }
 </style>
